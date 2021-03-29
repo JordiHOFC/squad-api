@@ -1,0 +1,12 @@
+br\com\zup\Squad\membro\MembroResponseDTO.class
+br\com\zup\Squad\validation\MaiorIdadeValidator.class
+br\com\zup\Squad\handler\ErrorHandler.class
+br\com\zup\Squad\membro\MembroRequestDTO.class
+br\com\zup\Squad\validation\MaiorIdadeValid.class
+br\com\zup\Squad\validation\UniqueValueValid.class
+br\com\zup\Squad\membro\MembroRepository.class
+br\com\zup\Squad\membro\MembroController.class
+br\com\zup\Squad\membro\Membro.class
+br\com\zup\Squad\handler\Erros.class
+br\com\zup\Squad\handler\ApiErro.class
+br\com\zup\Squad\validation\UniqueValueValidator.class
