@@ -39,4 +39,12 @@ public class Disciplina {
     public String getTitulo() {
         return titulo;
     }
+
+    public String getDescricao() {
+        return descricao;
+    }
+
+    public Double getCargaHoraria() {
+        return cargaHoraria;
+    }
 }
