@@ -2,6 +2,7 @@ package br.com.zup.Squad.membro;
 
 import br.com.zup.Squad.validation.MaiorIdadeValid;
 import br.com.zup.Squad.validation.UniqueValueValid;
+import br.com.zup.Squad.validation.ValidEmail;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -19,6 +20,7 @@ public class MembroRequestDTO {
     @JsonProperty("email")
     @NotBlank
     @Email
+    @ValidEmail
     private String email;
     @JsonProperty("senha")
     @NotBlank
