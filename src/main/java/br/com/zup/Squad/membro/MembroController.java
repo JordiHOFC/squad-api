@@ -27,7 +27,7 @@ public class MembroController {
 
     @PostMapping
     public ResponseEntity<MembroResponseDTO> insertMembro(@RequestBody @Valid MembroRequestDTO requestDTO ){
-        Membro membro = requestDTO.converteDTOParaEntidade();
+        Membro membro = requestDTO.converter();
         return ResponseEntity.ok().body(new MembroResponseDTO(membroRepository.save(membro)));
     }
 
