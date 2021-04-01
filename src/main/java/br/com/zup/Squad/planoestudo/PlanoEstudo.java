@@ -1,8 +1,11 @@
 package br.com.zup.Squad.planoestudo;
 
+import br.com.zup.Squad.disciplina.Disciplina;
 import br.com.zup.Squad.squad.Squad;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 public class PlanoEstudo {
@@ -19,6 +22,9 @@ public class PlanoEstudo {
     @ManyToOne
     private Squad squad;
 
+    @ManyToMany(fetch = FetchType.LAZY)
+    private List<Disciplina> disciplinas=new ArrayList<>();
+
     public PlanoEstudo(String titulo, String descricao) {
         this.titulo = titulo;
         this.descricao = descricao;
@@ -33,5 +39,9 @@ public class PlanoEstudo {
 
     public String getTitulo() {
         return titulo;
+    }
+
+    public List<Disciplina> getDisciplinas() {
+        return disciplinas;
     }
 }

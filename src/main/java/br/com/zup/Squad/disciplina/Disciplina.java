@@ -10,7 +10,7 @@ import javax.validation.constraints.NotBlank;
 public class Disciplina {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long Id;
+    private Long id;
     @Column(unique = true , nullable = false)
     private String titulo;
     @NotBlank
@@ -30,8 +30,12 @@ public class Disciplina {
         this.cargaHoraria = cargaHoraria;
     }
 
+    public Disciplina(Long id) {
+        this.id=id;
+    }
+
     public Long getId() {
-        return Id;
+        return id;
     }
 
     public String getTitulo() {
