@@ -39,7 +39,7 @@ public class MembroRequestDTO {
         this.dataNascimento = dataNascimento;
     }
 
-    public Membro converteDTOParaEntidade(){
+    public Membro converter(){
         return new Membro(this.nome,this.email,this.senha,this.dataNascimento);
     }
 }
